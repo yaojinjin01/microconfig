@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: microconfig-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka-dev.com:7002/eureka,http://edmin:mldnjava@eureka-7003.com:7003/eureka
+---
+spring:
+  profiles: beta
+  application:
+    name: microconfig-config-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka-beta.com:7002/eureka,http://edmin:mldnjava@eureka-7003.com:7003/eureka
