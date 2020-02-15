@@ -12,7 +12,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka-dev.com:7002/eureka,http://edmin:mldnjava@eureka-7003.com:7003/eureka
+      defaultZone: http://edmin:mldnjava@eureka-config.com:7301/eureka
 ---
 server:
   port: 8102
@@ -23,4 +23,4 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka-beta.com:7002/eureka,http://edmin:mldnjava@eureka-7003.com:7003/eureka
+      defaultZone: http://edmin:mldnjava@eureka-config.com:7301/eureka
